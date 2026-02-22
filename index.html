@@ -8,7 +8,7 @@
         :root {
             --bg-color: #000000;
             --card-bg: #111111;
-            --accent-gold: #D4AF37;
+            --accent-gold: #CC5500; /* تم تغيير اللون للبرتقالي ليتناسب مع هوية التطبيق الجديدة */
             --text-primary: #ffffff;
             --text-secondary: #cccccc;
             --border-color: #333333;
@@ -47,45 +47,56 @@
     <div class="container">
         <div class="policy-header">
             <h1>Privacy Policy</h1>
-            <p style="margin-top: 10px;">Effective Date: February 19, 2026</p>
+            <p style="margin-top: 10px;">Effective Date: February 22, 2026</p>
         </div>
 
-        <p>At <span class="highlight">omniAi</span>, we take your privacy seriously. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to ensure your personal data remains secure.</p>
+        <p>At <span class="highlight">omniAi</span>, we take your privacy seriously. This policy explains how we handle your data, especially with our new AI integration features.</p>
 
-        <h2>1. Local-First Data Processing</h2>
-        <p>To ensure maximum security and privacy, omniAi is designed as a local-first utility suite. This means:</p>
+        <h2>1. AI Data Processing (OmniAI Agent)</h2>
+        <p>Our application features an AI assistant powered by third-party APIs (Groq/Llama). </p>
         <ul>
-            <li><span class="highlight">Code Lab:</span> All source code you write is executed locally within your device's secure sandbox. We do not store or transmit your code to any external servers.</li>
-            <li><span class="highlight">Prompt Architect & Image Studio:</span> Prompt generation is handled using local logic and templates. Your creative inputs remain on your device.</li>
-            <li><span class="highlight">Color Lab & Content Planner:</span> Data is processed locally to provide instant results without the need for cloud storage.</li>
+            <li><span class="highlight">Conversations:</span> Chat data with the OmniAI Agent is sent to Groq APIs for processing only. We do not store your chat logs on our own servers.</li>
+            <li><span class="highlight">Local Storage:</span> Your chat history is saved locally on your device's memory to enhance your experience. You can clear this history at any time using the "Delete" icon.</li>
         </ul>
 
-        <h2>2. Data Collection & Usage</h2>
-        <p>We do not collect personally identifiable information (PII) such as your name, address, or phone number. We do not require account registration to access our core productivity tools.</p>
-
-        <h2>3. Third-Party Services</h2>
-        <p>To support the continued development of omniAi, we may use the following third-party services:</p>
+        <h2>2. Camera & Image Data (Prompt Extractor)</h2>
+        <p>Our "Prompt Extractor" tool requires access to your device camera or gallery to function.</p>
         <ul>
-            <li><span class="highlight">Google AdMob:</span> We display advertisements. These partners may collect non-identifiable technical data (such as device ID or IP address) to serve relevant ads.</li>
-            <li><span class="highlight">External AI Links:</span> Our directory provides links to third-party AI websites. Please note that these sites have their own privacy policies, and we are not responsible for their content or practices.</li>
+            <li><span class="highlight">Image Processing:</span> Images you upload are processed through high-speed AI Vision models to generate prompts. </li>
+            <li><span class="highlight">No Permanent Storage:</span> We do not save, store, or share your personal photos. Images are discarded immediately after the analysis is complete.</li>
         </ul>
 
-        <h2>4. Permissions Required</h2>
-        <p>The application may request certain permissions to function correctly:</p>
+        <h2>3. Local-First Tools</h2>
+        <p>To ensure maximum security, many of our tools run entirely on your device:</p>
         <ul>
-            <li><span class="highlight">Internet Access:</span> Necessary for loading external tools, favicons, and displaying advertisements.</li>
-            <li><span class="highlight">Clipboard Access:</span> Allows you to copy generated prompts, code, and color hex codes for use in other applications.</li>
+            <li><span class="highlight">Code Lab:</span> Executes code within your device's secure browser sandbox.</li>
+            <li><span class="highlight">UI Settings:</span> Your theme preferences, font sizes, and "Pinned Tools" are stored locally on your device only.</li>
         </ul>
 
-        <h2>5. Compliance with Laws</h2>
-        <p>We are committed to complying with international data protection standards, including GDPR and CCPA, where applicable, by minimizing data collection and empowering user control.</p>
+        <h2>4. Third-Party Services</h2>
+        <p>We use trusted providers to power our services:</p>
+        <ul>
+            <li><span class="highlight">Groq Cloud:</span> Powers our real-time AI responses.</li>
+            <li><span class="highlight">Google AdMob:</span> May collect non-identifiable technical data (device ID/IP) to serve relevant advertisements.</li>
+            <li><span class="highlight">External AI Links:</span> Our directory links to third-party sites. Each has its own privacy policy which we encourage you to read.</li>
+        </ul>
 
-        <h2>6. Contact Information</h2>
-        <p>If you have any questions regarding this Privacy Policy or our data practices, please reach out to us at:</p>
+        <h2>5. Permissions Required</h2>
+        <ul>
+            <li><span class="highlight">Camera:</span> Used only for analyzing images via Prompt Extractor.</li>
+            <li><span class="highlight">Storage:</span> To allow you to pick images from your gallery.</li>
+            <li><span class="highlight">Internet:</span> To connect with AI models and fetch tool icons.</li>
+        </ul>
+
+        <h2>6. Compliance</h2>
+        <p>We comply with GDPR and CCPA standards by minimizing data collection. We do not require account registration, ensuring you remain anonymous while using our tools.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>For any privacy-related questions, contact us at:</p>
         <p><span class="highlight">Email:</span> khalidelhind8@gmail.com</p>
 
         <div class="footer">
-            &copy; 2026 omniAi Suite. Developed for the Creative Community. All rights reserved.
+            &copy; 2026 omniAi Suite. Developed by Khalid Elhind. All rights reserved.
         </div>
     </div>
 </body>
