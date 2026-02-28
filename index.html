@@ -2,102 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Privacy Policy - omniAi</title>
     <style>
-        :root {
-            --bg-color: #000000;
-            --card-bg: #111111;
-            --accent-gold: #CC5500; /* تم تغيير اللون للبرتقالي ليتناسب مع هوية التطبيق الجديدة */
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --border-color: #333333;
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
+
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            margin: 0; padding: 20px;
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
         }
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
-        .policy-header {
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        /* تنسيق العنوان وتاريخ الإصدار */
+        h1 {
+            color: #CC5500;
+            font-size: 28px;
             text-align: center;
-            border-bottom: 2px solid var(--accent-gold);
+            margin-bottom: 5px;
+            font-weight: 900;
+        }
+
+        .effective-date {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
             padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .intro {
+            font-size: 15px;
+            color: #ccc;
             margin-bottom: 30px;
         }
-        h1 { color: var(--accent-gold); font-size: 28px; margin: 0; }
-        h2 { color: var(--accent-gold); font-size: 20px; margin-top: 30px; border-left: 4px solid var(--accent-gold); padding-left: 15px; }
-        p, li { color: var(--text-secondary); font-size: 15px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .highlight { color: var(--text-primary); font-weight: bold; }
+
+        /* تنسيق الأقسام */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #CC5500;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-left: 4px solid #CC5500;
+            padding-left: 10px;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            font-size: 14.5px;
+            color: #ccc;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .section li b {
+            color: #fff;
+        }
+
+        /* تنسيق الفوتر */
         .footer {
-            text-align: center;
             margin-top: 50px;
             padding-top: 20px;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid #333;
+            text-align: center;
             font-size: 12px;
             color: #666;
+        }
+
+        a {
+            color: #CC5500;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="policy-header">
-            <h1>Privacy Policy</h1>
-            <p style="margin-top: 10px;">Effective Date: February 22, 2026</p>
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Effective Date: February 28, 2026</div>
+
+        <p class="intro">
+            At <b>omniAi</b>, we take your privacy seriously. This policy explains how we handle your data, especially with our AI integration features and community tools.
+        </p>
+
+        <div class="section">
+            <h2 class="section-title">1. AI Data Processing</h2>
+            <p>Our application features AI tools powered by third-party APIs (e.g., Groq, Llama).</p>
+            <ul>
+                <li><b>Conversations:</b> Chat data processed by our AI is sent securely to API providers for processing only. We do not store your chat logs on our servers.</li>
+                <li><b>Local Storage:</b> Your generated prompts and tool history are saved locally on your device's memory to enhance your experience. You can clear this history at any time.</li>
+            </ul>
         </div>
 
-        <p>At <span class="highlight">omniAi</span>, we take your privacy seriously. This policy explains how we handle your data, especially with our new AI integration features.</p>
+        <div class="section">
+            <h2 class="section-title">2. Camera & Image Data (Prompt Extractor)</h2>
+            <p>Our "Prompt Extractor" tool requires access to your device camera or gallery to function.</p>
+            <ul>
+                <li><b>Image Processing:</b> Images you upload are processed through high-speed AI Vision models to generate text prompts.</li>
+                <li><b>No Permanent Storage:</b> We do not save, store, or share your personal photos. Images are discarded immediately after the analysis is complete.</li>
+            </ul>
+        </div>
 
-        <h2>1. AI Data Processing (OmniAI Agent)</h2>
-        <p>Our application features an AI assistant powered by third-party APIs (Groq/Llama). </p>
-        <ul>
-            <li><span class="highlight">Conversations:</span> Chat data with the OmniAI Agent is sent to Groq APIs for processing only. We do not store your chat logs on our own servers.</li>
-            <li><span class="highlight">Local Storage:</span> Your chat history is saved locally on your device's memory to enhance your experience. You can clear this history at any time using the "Delete" icon.</li>
-        </ul>
+        <div class="section">
+            <h2 class="section-title">3. User-Generated Content (Ai Community)</h2>
+            <p>Our application includes a public chat feature ("Ai Community"). We have a strict <b>zero-tolerance policy</b> for objectionable content, harassment, or abusive users.</p>
+            <ul>
+                <li><b>Reporting & Blocking:</b> Users can report inappropriate messages and block abusive users directly within the chat interface.</li>
+                <li><b>Moderation:</b> We actively moderate this community. We reserve the right to instantly remove content and permanently ban users who violate our community guidelines without prior notice.</li>
+            </ul>
+        </div>
 
-        <h2>2. Camera & Image Data (Prompt Extractor)</h2>
-        <p>Our "Prompt Extractor" tool requires access to your device camera or gallery to function.</p>
-        <ul>
-            <li><span class="highlight">Image Processing:</span> Images you upload are processed through high-speed AI Vision models to generate prompts. </li>
-            <li><span class="highlight">No Permanent Storage:</span> We do not save, store, or share your personal photos. Images are discarded immediately after the analysis is complete.</li>
-        </ul>
+        <div class="section">
+            <h2 class="section-title">4. Local-First Security & API Keys</h2>
+            <p>To ensure maximum security, many of our tools run entirely on your device:</p>
+            <ul>
+                <li><b>User API Keys:</b> For advanced features (e.g., Video Prompt Architect), you may enter your own third-party API keys. These keys are stored strictly <b>locally</b> on your device. We do not collect, intercept, or store your personal API keys on our servers.</li>
+                <li><b>Code Lab:</b> Executes code within your device's secure browser sandbox.</li>
+                <li><b>UI Settings:</b> Your theme preferences and saved notes are stored locally on your device only.</li>
+            </ul>
+        </div>
 
-        <h2>3. Local-First Tools</h2>
-        <p>To ensure maximum security, many of our tools run entirely on your device:</p>
-        <ul>
-            <li><span class="highlight">Code Lab:</span> Executes code within your device's secure browser sandbox.</li>
-            <li><span class="highlight">UI Settings:</span> Your theme preferences, font sizes, and "Pinned Tools" are stored locally on your device only.</li>
-        </ul>
+        <div class="section">
+            <h2 class="section-title">5. Third-Party Services</h2>
+            <p>We use trusted providers to power our services:</p>
+            <ul>
+                <li><b>Groq Cloud:</b> Powers our real-time AI responses.</li>
+                <li><b>Google AdMob:</b> May collect non-identifiable technical data (device ID/IP) to serve relevant advertisements.</li>
+                <li><b>External AI Links:</b> Our directory links to third-party sites. Each has its own privacy policy which we encourage you to read.</li>
+            </ul>
+        </div>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We use trusted providers to power our services:</p>
-        <ul>
-            <li><span class="highlight">Groq Cloud:</span> Powers our real-time AI responses.</li>
-            <li><span class="highlight">Google AdMob:</span> May collect non-identifiable technical data (device ID/IP) to serve relevant advertisements.</li>
-            <li><span class="highlight">External AI Links:</span> Our directory links to third-party sites. Each has its own privacy policy which we encourage you to read.</li>
-        </ul>
+        <div class="section">
+            <h2 class="section-title">6. Permissions Required</h2>
+            <ul>
+                <li><b>Camera:</b> Used only for analyzing images via Prompt Extractor.</li>
+                <li><b>Storage:</b> To allow you to pick images from your gallery.</li>
+                <li><b>Internet:</b> To connect with AI models and fetch tool data.</li>
+            </ul>
+        </div>
 
-        <h2>5. Permissions Required</h2>
-        <ul>
-            <li><span class="highlight">Camera:</span> Used only for analyzing images via Prompt Extractor.</li>
-            <li><span class="highlight">Storage:</span> To allow you to pick images from your gallery.</li>
-            <li><span class="highlight">Internet:</span> To connect with AI models and fetch tool icons.</li>
-        </ul>
+        <div class="section">
+            <h2 class="section-title">7. Compliance</h2>
+            <p>We comply with standard privacy regulations by minimizing data collection. We do not require account registration (Email, Phone, etc.) for our core tools, ensuring you remain anonymous while using the app.</p>
+        </div>
 
-        <h2>6. Compliance</h2>
-        <p>We comply with GDPR and CCPA standards by minimizing data collection. We do not require account registration, ensuring you remain anonymous while using our tools.</p>
-
-        <h2>7. Contact Information</h2>
-        <p>For any privacy-related questions, contact us at:</p>
-        <p><span class="highlight">Email:</span> khalidelhind8@gmail.com</p>
+        <div class="section">
+            <h2 class="section-title">8. Contact Information</h2>
+            <p>For any privacy-related questions, contact us at:</p>
+            <p><b>Email:</b> <a href="mailto:khalidelhind8@gmail.com">khalidelhind8@gmail.com</a></p>
+        </div>
 
         <div class="footer">
-            &copy; 2026 omniAi Suite. Developed by Khalid Elhind. All rights reserved.
+            © 2026 omniAi Suite. Developed by Khalid Elhind.<br>
+            All rights reserved.
         </div>
     </div>
+
 </body>
 </html>
